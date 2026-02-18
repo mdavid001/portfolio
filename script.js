@@ -87,12 +87,20 @@ menuToggle.addEventListener('click', () => {
     }
 });
 
-// Form submission (prevent default for demo)
+// Form submission handling - FIXED for Formspree
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thank you for your message! This is a demo form.');
+    contactForm.addEventListener('submit', function(e) {
+        // DON'T prevent default for Formspree!
+        // Let's just show loading state
+        const submitBtn = this.querySelector('.submit-btn');
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+        
+        // The form will now submit normally to Formspree
+        // No e.preventDefault() here!
+        
+        return true; // Allow normal submission
     });
 }
 

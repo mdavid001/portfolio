@@ -39,7 +39,7 @@
             <h1 class="hero-title">
                 <span class="hero-title-line"><span>Creative</span></span>
                 <span class="hero-title-line"><span>Developer &</span></span>
-                <span class="hero-title-line"><span>Model</span></span>
+                <span class="hero-title-line"><span>Designer</span></span>
             </h1>
             <p class="hero-subtitle">Digital experiences with code and creativity</p>
         </div>
@@ -52,28 +52,28 @@
     <!-- Work Section -->
     <section id="work">
         <div class="container">
-            <span class="section-subtitle">Selected Work</span>
+            <span class="section-subtitle">Featured Work</span>
             <h2>Projects that push boundaries</h2>
             <div class="work-grid">
                 <div class="work-item">
                     <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&auto=format&fit=crop" alt="Project 1" class="work-image">
                     <div class="work-overlay">
-                        <h3 class="work-title">Ethereal</h3>
-                        <p class="work-category">Web Design</p>
+                        <h3 class="work-title">Simple</h3>
+                        <p class="work-category">Web Designs</p>
                     </div>
                 </div>
                 <div class="work-item">
                     <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&auto=format&fit=crop" alt="Project 2" class="work-image">
                     <div class="work-overlay">
-                        <h3 class="work-title">Nova</h3>
+                        <h3 class="work-title">Prototype</h3>
                         <p class="work-category">Development</p>
                     </div>
                 </div>
                 <div class="work-item">
                     <img src="https://images.unsplash.com/photo-1558655146-364adaf1fcc9?w=800&auto=format&fit=crop" alt="Project 3" class="work-image">
                     <div class="work-overlay">
-                        <h3 class="work-title">Aether</h3>
-                        <p class="work-category">Brand Identity</p>
+                        <h3 class="work-title">Analytics</h3>
+                        <p class="work-category">for Brands</p>
                     </div>
                 </div>
             </div>
@@ -87,8 +87,8 @@
             <h2>Passionate about developing</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a multidisciplinary designer and developer with a passion for creating beautiful, functional digital experiences. With over 5 years of experience in the industry, I've worked with startups and established brands to bring their visions to life.</p>
-                    <p>My approach combines clean design with robust development, ensuring that every project is not only visually stunning but also performant and accessible.</p>
+                    <p>I am a designer and developer with a passion for creating functional digital experiences. With over a year of experience in this field, I've also gotten certifications and made projects to bring their visions to life.</p>
+                    <p>My approach combines clean design with scalability, ensuring that every project is not only visually stunning but also performant and accessible to users.</p>
                     <div class="stats">
                         <div class="stat-item">
                             <span class="stat-number">1+</span>
@@ -104,8 +104,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&auto=format&fit=crop" alt="Workspace">
+                <div class="about-image"> 
+                    <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Workspace">
                 </div>
             </div>
         </div>
@@ -135,7 +135,7 @@
                 <div class="service-card">
                     <span class="service-icon">🚀</span>
                     <h3 class="service-title">Performance</h3>
-                    <p class="service-description">Providing the best user experience.</p>
+                    <p class="service-description">Providing the best user experience and brand analytics.</p>
                 </div>
             </div>
         </div>
@@ -153,7 +153,7 @@
                     <div class="contact-details">
                         <div class="contact-detail-item">
                             <span>📧</span>
-                            <span>adaezedavid76@gmail.com</span>
+                            <a href="mailto:adaezedavid76@gmail.com">adaezedavid76@gmail.com</a>
                         </div>
                         <div class="contact-detail-item">
                             <span>📱</span>
@@ -165,21 +165,23 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" required>
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" required>
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" required></textarea>
-                        <label for="message">Message</label>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+                <form class="contact-form" action="https://formspree.io/f/mbdakkze" method="POST">
+                    <input type="hidden" name="_subject" value="New Portfolio Message">
+                
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
             </div>
         </div>
     </section>
@@ -187,8 +189,8 @@
     <!-- Footer -->
     <footer>
         <div class="social-links">
-            <a href="#" class="social-link">GitHub</a>
-            <a href="#" class="social-link">LinkedIn</a>
+            <a href="https://github.com/mdavid001" class="social-link">GitHub</a>
+            <a href="https://ng.linkedin.com/in/michelle-ada-david-89885725b" class="social-link">LinkedIn</a>
             <a href="#" class="social-link">Twitter</a>
             <a href="#" class="social-link">Instagram</a>
         </div>
@@ -197,6 +199,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
+    
 </body>
 </html>

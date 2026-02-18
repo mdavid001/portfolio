@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raw Formspree Test</title>
+</head>
+<body style="font-family: Arial; padding: 40px; max-width: 500px; margin: 0 auto;">
+    <h2 style="color: #333;">RAW FORMSPREE TEST</h2>
+    <p style="margin-bottom: 30px; color: #666;">No CSS, no JavaScript - just pure HTML</p>
+    
+    <!-- YOUR EXACT FORMSPREE ENDPOINT -->
+    <form action="https://formspree.io/f/mbdakkze" method="POST">
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 5px; font-weight: bold;">Name:</label>
+            <input type="text" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 5px; font-weight: bold;">Email:</label>
+            <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 5px; font-weight: bold;">Message:</label>
+            <textarea name="message" required style="width: 100%; padding: 10px; border: 1px solid #ccc; height: 150px;"></textarea>
+        </div>
+        
+        <button type="submit" style="background: #83cbe0; color: white; border: none; padding: 12px 30px; font-size: 16px; cursor: pointer;">SEND TEST</button>
+    </form>
+    
+    <p style="margin-top: 30px; color: #ff0000; font-weight: bold;">Does THIS work? If YES → problem is your CSS/JS. If NO → problem is Formspree/form ID.</p>
+</body>
+</html>
